@@ -1,0 +1,8 @@
+an_image_toggler.content:
+  path: '/image-toggler'
+  defaults:
+    _controller: '\Drupal\an_image_toggler\Controller\AnImageTogglerController::content'
+    _title: 'An Image Toggler Component'
+  requirements:
+    _permission: 'access content'
+

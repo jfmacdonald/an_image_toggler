@@ -1,0 +1,6 @@
+name: An Image Toggler
+description: Creates a page with two images, some body copy, and a button that makes one image hide and the other appear.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

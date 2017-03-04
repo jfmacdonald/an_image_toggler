@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains an_image_toggler.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function an_image_toggler_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the hugs module.
+    case 'help.page.an_image_toggler':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A simple example of a button that toggles the visibility of two images') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function an_image_toggler_theme() {
+  $default_img1                   = 'http://lorempixel.com/480/360/nature/';
+  $default_img2                   = 'http://lorempixel.com/480/360/animals/';
+  $default_body                   = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dignissimos eaque error esse est id incidunt, ipsa ipsam labore magni maxime minima nihil nostrum officia quae quam quisquam quos reprehenderit!';
+  $theme['an_image_toggler_component'] = array(
+    'template'  => 'component',
+    'variables' => array(
+      'img1' => $default_img1,
+      'img2' => $default_img2,
+      'body' => $default_body
+    )
+  );
+  return $theme;
+}

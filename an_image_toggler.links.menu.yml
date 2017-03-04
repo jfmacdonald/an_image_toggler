@@ -1,0 +1,7 @@
+an_image_toggler.admin:
+  title: 'Settings for An Image Toggler'
+  description: 'An admin settings page link for a Drupal 8 module'
+  parent: system.admin_config_development
+  route_name: an_image_toggler.content
+  weight: 100
+

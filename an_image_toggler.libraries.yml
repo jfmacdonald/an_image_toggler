@@ -1,0 +1,5 @@
+an_image_toggler:
+  js:
+    js/an_image_toggler.js: {}
+  dependencies:
+    - core/jquery
